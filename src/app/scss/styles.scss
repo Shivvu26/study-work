@@ -1,0 +1,22 @@
+.test {
+  width: percentage(1/5);
+}
+body {
+  background: lightgrey;
+}
+label,h1 {
+  color: red;
+  font-size: 28px;
+}
+input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  color: darkcyan;
+  &::placeholder {
+    color: darkgreen;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+}

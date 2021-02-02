@@ -1,0 +1,32 @@
+{
+  "name": "study-work",
+  "version": "1.0.0",
+  "main": "src/app/app.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivvu26/study-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shivvu26/study-work/issues"
+  },
+  "homepage": "https://github.com/Shivvu26/study-work#readme",
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "gulp-util": "^3.0.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0"
+  },
+  "description": ""
+}
