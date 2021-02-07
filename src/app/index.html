@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app1" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,19 @@
 </head>
 <body>
     <div>
+        <h2>Two-way data binding</h2>
         <label>Name:</label>
-        <input type="text" ng-model="Name" placeholder="Enter a name here">
+        <input type="text" two-way-data-bind="name" placeholder="Enter a name here">
+        <span class="name" two-way-data-bind="name"></span>
         <hr>
-        <h1>Hello {{Name}}!</h1>
+       <label>Age:</label>
+        <input class="age" two-way-data-bind="age" type="text" placeholder="Enter your age here">
+        <span two-way-data-bind="age"></span>
     </div>
-    <div ng-controller="ctrl1">
-          Random number : {{randomNum}}
-    </div>
-    <p> A new paragraph is added for testing watch on saving html files.</p>
+<hr>
 
-
-    <!--build:js js/main.min.js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="app.js"></script>
-    <!-- endbuild -->
+
 
 </body>
 </html>
