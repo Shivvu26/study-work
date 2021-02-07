@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/app/app.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack serve",
+    "build-prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,16 +17,15 @@
   },
   "homepage": "https://github.com/Shivvu26/study-work#readme",
   "dependencies": {
-    "gulp-cli": "^2.3.0",
-    "gulp-util": "^3.0.8"
+    "angular": "^1.8.2",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "gulp": "^4.0.2",
-    "gulp-if": "^3.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^5.0.0"
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "description": ""
 }

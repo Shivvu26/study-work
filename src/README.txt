@@ -1,22 +1,8 @@
-This is a simple POC for Gulp use.
+This is a simple POC for WEBPACK use.
 
-- Use gulp serve to run the application in browser.
+- use "npm run build" to successfully compile the app and open it on localhost:8080 in browser.
 
-Globbing -
-**/*.filetype
+webpack -p : -p indicates to build release for production
 
-Gulp-useref
-It concatenates any number of CSS and JavaScript files into a single file by looking for a comment that starts with
-“<!–build: 'path to where file has to be stored ” and ends with “<!–endbuild–>”
+webpack use with modules , loaders , plugins
 
-
-Gulp-uglify - uglify()
-This plugin helps with minifying JavaScript files.
-
-Gulp-cssnano - cssnano()
-This plugin helps with minifying JavaScript files.
-
-Gulp-imagemin - imagemin()
-It helps to optimize images and reducing size.
-
-Gulp-cache - cache()
