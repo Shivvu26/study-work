@@ -14,13 +14,18 @@
             <hr>
             <h1>Hello {{Name}}!</h1>
         </div>
+
         <div>
-            Random number : {{randomNum}}
+            {{serviceOutput}}
+            <br/><br/>
+            {{factoryOutput}}
+            <br/><br/>
+            {{providerOutput}}
         </div>
     </div>
 
     <!--build:js js/main.min.js -->
-    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="app.js"></script>
     <!-- endbuild -->
 
