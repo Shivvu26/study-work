@@ -17,10 +17,17 @@
         <div>
             Random number : {{randomNum}}
         </div>
+        <br>
+        <input type="text" ng-model="name"><br>
+        <span>Counter(using $watch) : {{counter}}</span>
+        <br><br>
+        <p>{{datetime}}</p>
+        <button id="updateTime">Update time (using $digest)</button>
+        <button id="updateTimeBtn">Update time(using $apply)</button>
     </div>
 
     <!--build:js js/main.min.js -->
-    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="app.js"></script>
     <!-- endbuild -->
 
