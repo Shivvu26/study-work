@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body ng-controller="ctrl1">
-    <div class="container1">
+<body class="container1">
+    <div ng-controller="ctrl1">
         <div>
             <label>Name:</label>
             <input type="text" ng-model="Name" placeholder="Enter a name here">
@@ -22,6 +22,27 @@
             <br/><br/>
             {{providerOutput}}
         </div>
+        <br>
+        <hr>
+        <div>
+            <p style="text-decoration: underline">Data using $http client request using dummy json data.</p>
+            <ul>
+                <li ng-repeat="row in jsondata">
+                    {{ row.id + ', ' + row.name + ', ' + row.location}} <br>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <p>Data sharing between controllers</p>
+            <input type="text" ng-model="data.name">
+            <br> Input in first controller is : {{data.name}}
+        </div>
+    </div>
+
+    <div ng-controller="ctrl2">
+        <input type="text" ng-model="data.name">
+        <br> Input in second controller is : {{data.name}}
     </div>
 
     <!--build:js js/main.min.js -->
