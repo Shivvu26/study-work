@@ -17,6 +17,28 @@
         <div>
             Random number : {{randomNum}}
         </div>
+        <hr>
+        <div>
+            <sam-dir></sam-dir>
+            <br>
+            <br>
+            <hr>
+<br>
+            <sec-dir>Click me</sec-dir>
+        </div>
+        <br><br><hr>
+        <div>
+            First Directive
+            <first-directive>
+                <strong>{{first.data}}</strong>
+                <button ng-click="first.change('NEW VALUE')">Change Value</button>
+            </first-directive>
+            <br><br>
+            Second Directive
+            <second-directive>
+                <strong>{{second.data}}</strong>
+            </second-directive>
+        </div>
     </div>
 
     <!--build:js js/main.min.js -->
